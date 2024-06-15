@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @Component({
-  selector: 'my-our-products',
+  selector: 'products-tabs',
+  templateUrl: 'our-products.component.html',
   standalone: true,
-  imports: [],
-  templateUrl: './our-products.component.html',
-  styleUrl: './our-products.component.css'
+  imports: [MatTabsModule],
 })
-export class OurProductsComponent {
+export class OurProductsComponent{}
 
-}
