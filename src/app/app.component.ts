@@ -7,6 +7,7 @@ import { OurProductsComponent } from './our-products/our-products.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {OurApproachComponent} from './our-approach/our-approach.component';
 import {ReviewsComponent} from './reviews/reviews.component'
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -14,7 +15,7 @@ import {ReviewsComponent} from './reviews/reviews.component'
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent,IntroComponent,TrustedByComponent,OurProductsComponent,OurApproachComponent,ReviewsComponent,MatSlideToggleModule],
+  imports: [RouterOutlet, HeaderComponent,FooterComponent, IntroComponent,TrustedByComponent,OurProductsComponent,OurApproachComponent,ReviewsComponent,MatSlideToggleModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
