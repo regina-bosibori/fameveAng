@@ -3,11 +3,41 @@
     <p class="flex justify-center">We're here to help you digitize your business.</p>
 
 </div>
-<div class="flex justify-center space-x-4 rounded-lg mt-6">
-    <div>
-        <p class="font-bold">What should we know</p>
-        <p>Your Name</p>
-        <input class="rounded-lg" type="text">
+<div class="flex justify-between space-x-4 mt-10 mb-20 rounded-lg ">
+    <form >
+        <div class="w-md rounded-lg bg-blue-100 px-10 py-6 ml-20">
+            <p class="font-bold text-xl">What should we know ?</p>
+            <p>Hi {{name}}</p>
+            <div>
+                <label for="Name">Your Name&#42;</label>
+            <input [(ngModel)]="name" [ngModelOptions]="{standalone: true}" class="rounded-lg border px-3 py-2 w-full border-black focus:border-blue-500 transition duration-200 ease-in-out required" type="text">
+            </div> 
+            <div>
+                <label for="Work Email" class="pt-2">Work Email&#42;</label>
+            <input [(ngModel)]='Email' [ngModelOptions]="{standalone: true}" class="rounded-lg w-full border px-3 py-2 border-black focus:border-blue-500 transition duration-200 ease-in-out required" type="email">
+            </div>
+            <div>
+                <label for="Phone" class="pt-2">Phone&#42;</label>
+            <input class="w-full rounded-lg border px-3 py-2 border-black focus:border-blue-500 transition duration-200 ease-in-out required" type="tel">
+            </div>
+            <div>
+                <label for="CompanyName" class="pt-2">Company Name&#42;</label>
+            <input class="w-full rounded-lg border px-3 py-2 border-black focus:border-blue-500 transition duration-200 ease-in-out required" type="text">
+            </div>
+            <div>
+                <label for="Message" class="pt-2">Message</label>
+            <input class="w-full rounded-lg border px-3 h-20 py-2 border-black focus:border-blue-500 transition duration-200 ease-in-out required" type="text-area">
+            </div>
+    
+            <p>By clicking submit below, you agree to the processing<br> of your personal information by fameve limited as<br> described in our Privacy Policy.</p>
+            <button class="bg-blue-500 text-white px-6 py-3 rounded-lg ">Submit</button>
+    
+        </div>
+    </form>
+    <div class="w-1/3 rounded-lg bg-blue-100 px-10 py-6">
+        <img class="h-20 w-20 scale-150 pl-3 object-scale-down" src="https://www.fameve.com/assets/logo.jpeg">
+        <p><span class="font-bold">Email:</span><span>info&#64;fameve.com</span><br>business&#64;fameve.com</p>
+        <p><span class="font-bold">Phone:</span><span>+254703248870</span></p>
     </div>
     <div></div>
 
