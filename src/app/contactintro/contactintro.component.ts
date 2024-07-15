@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './contactintro.component.html',
   styleUrl: './contactintro.component.css'
 })
+
+
 export class ContactIntroComponent{
   Email: string= ''
   name: string = ''
