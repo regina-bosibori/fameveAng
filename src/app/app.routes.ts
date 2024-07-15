@@ -22,5 +22,9 @@ export const routes: Routes = [
     {
         path:'contacts',
         component: ContactpageComponent
+    },
+    {
+        path:'GetStarted',
+        component: ContactpageComponent
     }
 ];
