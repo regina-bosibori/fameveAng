@@ -8,8 +8,8 @@ import { FormsModule} from '@angular/forms';
       MatSlideToggleModule,
       CommonModule,
       RouterModule,
-      FormsModule,
-      
+      FormsModule
+
     ]
   })
   class AppModule {}
