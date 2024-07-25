@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule} from '@angular/forms';
+
 
 @Component({
   selector: 'app-contactintro',
@@ -10,9 +11,16 @@ import { FormsModule } from '@angular/forms';
 })
 
 
+
 export class ContactIntroComponent{
-  Email: string= ''
-  name: string = ''
- 
-}
+  user:any;
+  submitform(){
+    console.log(this.user);
+  }
   
+
+  }
+  
+  
+
+
